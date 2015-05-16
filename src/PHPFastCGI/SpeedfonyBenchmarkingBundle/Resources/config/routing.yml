@@ -1,0 +1,3 @@
+php_fast_cgi_speedfony_benchmarking_random_page:
+    path:     /random-page
+    defaults: { _controller: PHPFastCGISpeedfonyBenchmarkingBundle:Default:randomPage }

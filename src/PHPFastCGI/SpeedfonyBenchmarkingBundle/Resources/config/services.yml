@@ -1,0 +1,4 @@
+services:
+#    php_fast_cgi_speedfony_benchmarking.example:
+#        class: PHPFastCGI\SpeedfonyBenchmarkingBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
