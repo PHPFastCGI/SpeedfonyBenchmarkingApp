@@ -1,0 +1,4 @@
+php_fast_cgi_speedfony_benchmarking:
+    resource: "@PHPFastCGISpeedfonyBenchmarkingBundle/Resources/config/routing.yml"
+    prefix:   /
+
