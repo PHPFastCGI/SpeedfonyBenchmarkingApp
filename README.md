@@ -38,7 +38,7 @@ Set up your app/config/parameters.yml file using the user and database you have 
 ### 4. Create the schema and load the fixtures
 
 ``` sh
-php app/console doctrine:schema:create --force
+php app/console doctrine:schema:create
 php app/console doctrine:fixtures:load
 ```
 
