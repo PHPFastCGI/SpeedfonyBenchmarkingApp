@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f9be31145a02e6398ae350ee7fb3a5b5",
+    "hash": "4e604dfbf17982f55cccfa0cd68c2522",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1116,6 +1116,104 @@
             "time": "2015-03-09 09:58:04"
         },
         {
+            "name": "phpfastcgi/fastcgi-daemon",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPFastCGI/FastCGIDaemon.git",
+                "reference": "10a6ad52f7a522f210654a9f0359641672bac025"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPFastCGI/FastCGIDaemon/zipball/10a6ad52f7a522f210654a9f0359641672bac025",
+                "reference": "10a6ad52f7a522f210654a9f0359641672bac025",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPFastCGI\\FastCGIDaemon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL v2"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Carter",
+                    "email": "andrewcarter1992@gmail.com"
+                }
+            ],
+            "description": "A FastCGI daemon written in PHP",
+            "keywords": [
+                "daemon",
+                "fast cgi",
+                "fastcgi",
+                "server"
+            ],
+            "time": "2015-05-18 23:20:15"
+        },
+        {
+            "name": "phpfastcgi/speedfony-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPFastCGI/SpeedfonyBundle.git",
+                "reference": "aac94b481fe7b247d0dd4994a2e499a81146b405"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPFastCGI/SpeedfonyBundle/zipball/aac94b481fe7b247d0dd4994a2e499a81146b405",
+                "reference": "aac94b481fe7b247d0dd4994a2e499a81146b405",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "phpfastcgi/fastcgi-daemon": "0.1.0",
+                "symfony/config": "~2.0",
+                "symfony/console": "~2.0",
+                "symfony/dependency-injection": "~2.0",
+                "symfony/framework-bundle": "~2.0",
+                "symfony/http-kernel": "~2.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "PHPFastCGI\\SpeedfonyBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL v2"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Carter",
+                    "email": "andrewcarter1992@gmail.com"
+                }
+            ],
+            "description": "A bundle to integrate a FastCGI daemon with the symfony2 framework",
+            "keywords": [
+                "bundle",
+                "daemon",
+                "fast cgi",
+                "fastcgi",
+                "server",
+                "speedfony"
+            ],
+            "time": "2015-05-19 00:54:39"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1825,7 +1923,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "phpfastcgi/speedfony-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
