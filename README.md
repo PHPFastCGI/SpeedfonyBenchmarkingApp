@@ -49,3 +49,11 @@ If you have the following phpunit you can check that the application has been se
 ``` sh
 phpunit -c app/
 ```
+
+### 6. Configure your web server
+
+If you're using apache, add a directive similar to the one below to your virtual host configuration file.
+
+```
+FastCgiServer /path/to/symfony/web/app.fcgi
+```
