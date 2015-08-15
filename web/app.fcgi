@@ -1,2 +1,2 @@
 #!/bin/bash
-php ../app/console daemon:run --env=prod
+php ../app/console speedfony:run --env=prod
