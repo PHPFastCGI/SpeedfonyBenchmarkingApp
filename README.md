@@ -57,3 +57,9 @@ If you're using apache, add a directive similar to the one below to your virtual
 ```
 FastCgiServer /path/to/symfony/web/app.fcgi
 ```
+
+To get the best performance, you should use the processes option to configure several worker threads.
+
+### 7. Load the page
+
+The route '/random-page' is configured to load a random page from the database.
