@@ -23,7 +23,7 @@
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
 	"fzaninotto/faker": "~1.4",
-	"phpfastcgi/speedfony-bundle": "0.5.*"
+	"phpfastcgi/speedfony-bundle": "0.6.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
