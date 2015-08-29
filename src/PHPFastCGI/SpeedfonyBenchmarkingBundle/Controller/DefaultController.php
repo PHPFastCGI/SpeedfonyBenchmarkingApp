@@ -11,11 +11,14 @@ class DefaultController extends Controller
     {
         $id = mt_rand(0, LoadPageData::NUMBER_OF_PAGES - 1);
 
-        $page = $this
-            ->getDoctrine()
-            ->getRepository('PHPFastCGISpeedfonyBenchmarkingBundle:Page')
-            ->find($id);
+        $repository = $this->getDoctrine()->getRepository('PHPFastCGISpeedfonyBenchmarkingBundle:Page');
 
-        return $this->render('PHPFastCGISpeedfonyBenchmarkingBundle:Default:page.html.twig', array('page' => $page));
+        $page = $repository->find($id);
+
+        $response = $this->render('PHPFastCGISpeedfonyBenchmarkingBundle:Default:page.html.twig', array('page' => $page));
+
+        $repository->clear();
+
+        return $response;
     }
 }
