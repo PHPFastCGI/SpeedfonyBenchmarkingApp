@@ -1,6 +1,5 @@
 {
     "name": "phpfastcgi/speedfony-benchmarking-app",
-    "license": "proprietary",
     "type": "project",
     "autoload": {
         "psr-0": {
